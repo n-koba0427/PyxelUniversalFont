@@ -29,5 +29,8 @@ class App:
                 background_color = 7,
             )
 
-if __name__ == "__main__": 
+def start_app():
     App()
+
+if __name__ == "__main__": 
+    start_app()

@@ -16,6 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/n-koba0427/PyxelUniversalFont",
     classifiers=[
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.11",
@@ -23,4 +24,10 @@ setup(
         "Intended Audience :: Developers",
         "Natural Language :: Japanese",
     ],
+    entry_points={
+        'console_scripts': [
+            'puf sample=PyxelUnivarsalFont.SampleApp:start_app',
+            'puf edit=PyxelUnivarsalFont.PyxelUnivarsalFont:edit_fonts',
+        ],
+    },
 )
