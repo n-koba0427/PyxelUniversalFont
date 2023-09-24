@@ -18,19 +18,19 @@ PyxelUniversalFontは、公開されている"pyxel"ライブラリにフォン�
 
 ## インストール方法
 
-\```bash
+```bash
 pip install PyxelUniversalFont
-\```
+```
 
 その後、pyxelのプロジェクト内で以下のようにインポートしてください。
 
-\```python
+```python
 import PyxelUniversalFont
-\```
+```
 
 ## 使用方法
 
-\```python
+```python
 import pyxel
 import PyxelUniversalFont as puf
 
@@ -54,7 +54,7 @@ class App:
 
 if __name__ == "__main__": 
     App()
-\```
+```
 
 ## サポートしているフォント
 
@@ -66,18 +66,18 @@ if __name__ == "__main__":
 - IPA P明朝
 
 次のコマンドで開かれるディレクトリに、任意のフォントを追加できます。
-\```bash
+```bash
 puf edit
-\```
+```
 
 ## コマンド一覧
 
 1. サンプルアプリケーションの起動:
-    \```bash
+    ```bash
     puf sample
-    \```
+    ```
 2. フォント保存用ディレクトリを開く:
-    \```bash
+    ```bash
     puf edit
-    \```
+    ```
 
