@@ -3,13 +3,15 @@ import os
 import platform
 import subprocess
 import sys
+import importlib.resources as pkg_resources
 
-from src.utils import get_pixel_representation, list_font_files
+from PyxelUniversalFont.utils import get_pixel_representation, list_font_files
+
+FONTS_DIR = str(pkg_resources.files('PyxelUniversalFont').joinpath("fonts/"))
 
 class Writer:
     def __init__(self, font_name) -> None:
-        self.font_path = f'fonts/{font_name}.ttf'
-        print(self.font_path)
+        self.font_path = FONTS_DIR+f"/{font_name}.ttf"
         self.lib = dict()
         
     def draw(self, x, y, text, font_size=16, font_color=0, background_color=7):
@@ -33,7 +35,7 @@ class Writer:
                 )
 
 def get_available_fonts():
-    return list_font_files("fonts")
+    return list_font_files(FONTS_DIR)
         
 def get_writers():
     writers = dict()
@@ -43,7 +45,7 @@ def get_writers():
         )
     return writers
 
-def edit_fonts(path="fonts"):
+def edit_fonts(path=FONTS_DIR):
     if platform.system() == "Windows":
         os.startfile(path)
     elif platform.system() == "Darwin":

@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="pyxel_universal_font",
-    version="0.1",
+    name="pyxel-universal-font",
+    version="0.4.6",
     packages=find_packages(),
+    package_data={'PyxelUniversalFont': ['fonts/*']},
     install_requires=[
         "numpy",
         "Pillow",
@@ -26,8 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'puf sample=PyxelUnivarsalFont.SampleApp:start_app',
-            'puf edit=PyxelUnivarsalFont.PyxelUnivarsalFont:edit_fonts',
+            'puf=PyxelUniversalFont.command:command_manager',
         ],
     },
 )

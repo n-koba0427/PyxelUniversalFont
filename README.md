@@ -20,7 +20,7 @@ PyxelUniversalFontは、公開されている"pyxel"ライブラリにフォン�
 ## インストール方法
 
 ```bash
-pip install PyxelUniversalFont
+pip install pyxel-universal-font
 ```
 
 その後、pyxelのプロジェクト内で以下のようにインポートしてください。
