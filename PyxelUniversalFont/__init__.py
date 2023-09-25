@@ -1,2 +1,3 @@
-from PyxelUniversalFont.root import *
-from PyxelUniversalFont.utils import *
+from .src.root import *
+from .src.utils import *
+from . import *

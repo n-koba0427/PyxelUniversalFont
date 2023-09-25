@@ -1,7 +1,7 @@
 import argparse
 
-from PyxelUniversalFont.sample_app import start_app
-from PyxelUniversalFont.root import edit_fonts
+from .sample_app import start_app
+from .src.root import edit_fonts
 
 cmd_dict = {
     "sample": start_app,
