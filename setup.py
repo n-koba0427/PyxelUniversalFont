@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pyxel-universal-font",
-    version="1.0.1",
+    version="1.1.1",
     packages=find_packages(),
     package_data={'PyxelUniversalFont': ['fonts/*']},
     install_requires=[
